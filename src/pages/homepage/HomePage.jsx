@@ -19,11 +19,12 @@ const HomePage = () => {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    dispatch(fetchProperties(page));
+    dispatch(fetchProperties({
+      page,}));
   }, [dispatch, page]);
    
   const handleRetry = () => {
-    dispatch(fetchProperties(page));
+    dispatch(fetchProperties({page,}));
   };
 
   // Loading
@@ -88,7 +89,7 @@ const HomePage = () => {
           </div>
 
           <span className="property-count">
-            {properties?.length || 0} Properties
+            {count || 0} Properties
           </span>
         </div>
 
@@ -102,7 +103,7 @@ const HomePage = () => {
             <div className="homepage-pagination">
               <button
                 type="button"
-                disabled={page === 1}
+                disabled={!previous}
                 onClick={() => setPage((currentPage) => currentPage - 1)}
               >
                 Previous
