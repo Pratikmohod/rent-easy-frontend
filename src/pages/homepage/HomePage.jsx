@@ -24,9 +24,7 @@ const HomePage = () => {
    
   const handleRetry = () => {
     dispatch(
-      fetchProperties({
-        page,
-      }),
+      fetchProperties(page),
     );
   };
 
