@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { editProfile, fetchProfile } from "../../apiCalls/ProfileAPI";
-import { clearMessages } from "../../slice/userSlice";
+import { clearMessages } from "../../slice/UserSlice";
 import "./EditProfile.css";
 
 const EditProfile = () => {

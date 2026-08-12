@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Form from "./Form";
 import { addUser } from "../../apiCalls/UserApi";
 import { useNavigate, Link } from "react-router-dom";
-import { clearAddResponse } from "../../slice/userSlice";
+import { clearAddResponse } from "../../slice/UserSlice";
 import "./Register.css";
 
 const Register = () => {

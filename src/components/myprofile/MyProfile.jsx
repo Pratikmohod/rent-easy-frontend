@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { fetchProfile, deleteProfile } from "../../apiCalls/ProfileAPI";
-import { clearMessages } from "../../slice/userSlice";
+import { clearMessages } from "../../slice/UserSlice";
 import "./MyProfile.css";
 
 const MyProfile = () => {

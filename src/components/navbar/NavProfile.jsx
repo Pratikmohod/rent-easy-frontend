@@ -2,7 +2,7 @@ import React from "react";
 import NavbarLink from "./NavbarLink";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { logout } from "../../slice/userSlice";
+import { logout } from "../../slice/UserSlice";
 import "./NavProfile.css";
 import { clearNotifications } from "../../slice/NotificationSlice";
 
