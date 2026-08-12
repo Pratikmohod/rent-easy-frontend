@@ -12,7 +12,7 @@ const HomePage = () => {
     count = 0,
     next,
     previous,
-  } = useSelector((state) => state.properties);
+  } = useSelector((state) => state?.properties);
 
   const dispatch = useDispatch();
 
@@ -23,9 +23,7 @@ const HomePage = () => {
   }, [dispatch, page]);
    
   const handleRetry = () => {
-    dispatch(
-      fetchProperties(page),
-    );
+    dispatch(fetchProperties(page));
   };
 
   // Loading
@@ -48,7 +46,7 @@ const HomePage = () => {
 
         <button
           type="button"
-          onClick={() => dispatch(fetchProperties())}
+          onClick={handleRetry}
           className="retry-button"
         >
           Try Again
@@ -104,7 +102,7 @@ const HomePage = () => {
             <div className="homepage-pagination">
               <button
                 type="button"
-                disabled={!previous}
+                disabled={page === 1}
                 onClick={() => setPage((currentPage) => currentPage - 1)}
               >
                 Previous
