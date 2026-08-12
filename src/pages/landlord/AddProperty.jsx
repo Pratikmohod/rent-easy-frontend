@@ -105,7 +105,7 @@ const AddProperty = () => {
   useEffect(() => {
     if (responseCode === 201) {
       dispatch(clearResponseCode());
-      navigate("/homePage");
+      navigate("/properties");
     }
   }, [responseCode, dispatch, navigate]);
 
