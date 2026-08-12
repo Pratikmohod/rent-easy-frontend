@@ -1,0 +1,630 @@
+/* =========================================
+   NOTIFICATION PAGE
+========================================= */
+
+.notification-page {
+  min-height: 100vh;
+  background: #f5f3ff;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.notification-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.notification-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding: 30px 20px;
+}
+
+.notification-breadcrumb {
+  margin: 0 0 10px;
+
+  color: #7e22ce;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.notification-title-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.notification-title-row h1 {
+  margin: 0 0 7px;
+
+  color: #1f2937;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.notification-title-row p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+/* =========================================
+   MARK ALL BUTTON
+========================================= */
+
+.mark-all-button {
+  flex-shrink: 0;
+
+  padding: 11px 18px;
+
+  border: 1px solid #7e22ce;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #7e22ce;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.mark-all-button:hover {
+  background: #f5f3ff;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.notification-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px 50px;
+}
+
+/* =========================================
+   NOTIFICATION LIST
+========================================= */
+
+.notification-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+/* =========================================
+   NOTIFICATION CARD
+========================================= */
+
+.notification-card {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 50px 1fr;
+
+  column-gap: 18px;
+
+  padding: 20px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.notification-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   UNREAD CARD
+========================================= */
+
+.notification-unread {
+  border-color: #d8b4fe;
+
+  background: #faf5ff;
+}
+
+/* =========================================
+   UNREAD DOT
+========================================= */
+
+.unread-dot {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #7e22ce;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.notification-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f3e8ff;
+
+  font-size: 22px;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.notification-content {
+  min-width: 0;
+
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.notification-main h2 {
+  margin: 0 0 6px;
+
+  color: #1f2937;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.notification-main p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   STATUS BADGE
+========================================= */
+
+.notification-status-badge {
+  flex-shrink: 0;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.read-badge {
+  background: #f3f4f6;
+
+  color: #6b7280;
+}
+
+.unread-badge {
+  background: #f3e8ff;
+
+  color: #7e22ce;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.notification-footer {
+  grid-column: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 15px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #f0f0f0;
+}
+
+.notification-date {
+  color: #9ca3af;
+
+  font-size: 13px;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.notification-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+/* =========================================
+   VIEW BUTTON
+========================================= */
+
+.notification-view-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  border: 1px solid #7e22ce;
+
+  border-radius: 7px;
+
+  background: white;
+
+  color: #7e22ce;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.notification-view-button:hover {
+  background: #f5f3ff;
+}
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.notification-delete-button {
+  padding: 8px 16px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #dc2626;
+
+  color: white;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.notification-delete-button:hover {
+  background: #b91c1c;
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-notification-card {
+  padding: 60px 30px;
+
+  text-align: center;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.empty-notification-icon {
+  width: 75px;
+  height: 75px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #f3e8ff;
+
+  font-size: 32px;
+}
+
+.empty-notification-card h2 {
+  margin: 0 0 8px;
+
+  color: #1f2937;
+
+  font-size: 22px;
+}
+
+.empty-notification-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+/* =========================================
+   BROWSE PROPERTY BUTTON
+========================================= */
+
+.browse-property-button {
+  margin-top: 20px;
+
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #7e22ce;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.browse-property-button:hover {
+  background: #6b21a8;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.notification-status {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  background: #f5f3ff;
+
+  color: #7e22ce;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.notification-spinner {
+  width: 35px;
+  height: 35px;
+
+  border: 4px solid #e9d5ff;
+
+  border-top-color: #7e22ce;
+
+  border-radius: 50%;
+
+  animation: notification-spin 0.8s linear infinite;
+}
+
+@keyframes notification-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.notification-error-card {
+  width: 100%;
+
+  max-width: 500px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.error-icon {
+  font-size: 35px;
+
+  margin-bottom: 12px;
+}
+
+.notification-error-card h2 {
+  margin: 0 0 10px;
+
+  color: #1f2937;
+
+  font-size: 22px;
+}
+
+.notification-error-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  line-height: 1.6;
+}
+
+.retry-button {
+  margin-top: 20px;
+
+  padding: 11px 22px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #7e22ce;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background: #6b21a8;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+  .notification-title-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .mark-all-button {
+    width: 100%;
+  }
+
+  .notification-card {
+    grid-template-columns: 45px 1fr;
+
+    column-gap: 14px;
+  }
+
+  .notification-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+  .notification-header-inner {
+    padding: 25px 15px;
+  }
+
+  .notification-title-row h1 {
+    font-size: 27px;
+  }
+
+  .notification-container {
+    padding: 20px 15px 40px;
+  }
+
+  .notification-card {
+    display: block;
+
+    padding: 18px;
+  }
+
+  .notification-icon {
+    margin-bottom: 15px;
+  }
+
+  .notification-content {
+    display: block;
+  }
+
+  .notification-status-badge {
+    display: inline-block;
+
+    margin-top: 12px;
+  }
+
+  .notification-footer {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    margin-top: 15px;
+  }
+
+  .notification-actions {
+    width: 100%;
+  }
+
+  .notification-view-button,
+  .notification-delete-button {
+    flex: 1;
+
+    text-align: center;
+  }
+
+  .unread-dot {
+    top: 18px;
+    right: 18px;
+  }
+}

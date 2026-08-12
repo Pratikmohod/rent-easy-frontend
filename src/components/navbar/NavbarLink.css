@@ -1,0 +1,129 @@
+.navbar-link {
+  display: block;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #374151;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Hover */
+.navbar-link:hover {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+}
+
+/* Active Link */
+.navbar-link.active {
+  background-color: #7e22ce;
+  color: #ffffff;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Active link hover */
+.navbar-link.active:hover {
+  background-color: #6b21a8;
+  color: #ffffff;
+}
+
+
+/* =================FOR UNREAD COUNT=========================== */
+
+.navbar-link-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Navbar link */
+.navbar-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+/* Notification badge */
+.notification-badge {
+  position: absolute;
+
+  top: -8px;
+  right: -10px;
+
+  min-width: 18px;
+  height: 18px;
+
+  padding:10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e53935;
+  color: #ffffff;
+
+  border: 2px solid white;
+  border-radius: 50%;
+
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  z-index: 10;
+}
+
+/* 20+ badge needs slightly more width */
+.notification-badge {
+  min-width: 19px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .navbar-link-wrapper {
+    width: 100%;
+  }
+
+  .navbar-link {
+    width: 100%;
+    padding: 10px 12px;
+  }
+
+  .notification-badge {
+    top: 4px;
+    right: 4px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .navbar-link {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .notification-badge {
+    top: 5px;
+    right: 5px;
+
+    min-width: 18px;
+    height: 18px;
+
+    font-size: 9px;
+  }
+}

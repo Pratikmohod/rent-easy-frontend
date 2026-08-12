@@ -1,0 +1,511 @@
+/* =========================================
+   SINGLE PROPERTY PAGE
+========================================= */
+
+.single-property-page {
+  min-height: 100vh;
+  background: #f5f3ff;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.single-property-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.single-property-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 20px;
+}
+
+.breadcrumb {
+  margin: 0 0 8px;
+
+  color: #7e22ce;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.single-property-header h1 {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.single-property-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px 50px;
+}
+
+/* =========================================
+   PROPERTY CARD
+========================================= */
+
+.single-property-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================
+   IMAGE GALLERY
+========================================= */
+
+.property-gallery {
+  width: 100%;
+  background: #f3f4f6;
+}
+
+/* =========================================
+   PROPERTY DETAILS
+========================================= */
+
+.property-details {
+  padding: 35px;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.property-heading {
+  margin-bottom: 28px;
+}
+
+.property-type {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  padding: 6px 14px;
+
+  border-radius: 20px;
+
+  background: #f3e8ff;
+  color: #7e22ce;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: capitalize;
+}
+
+.property-heading h2 {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+/* =========================================
+   RENT
+========================================= */
+
+.rent-box {
+  margin-bottom: 32px;
+
+  padding: 22px;
+
+  border-radius: 14px;
+
+  background: #faf5ff;
+}
+
+.rent-label {
+  margin: 0 0 5px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.rent-value {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 8px;
+}
+
+.rent-value p {
+  margin: 0;
+
+  color: #7e22ce;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.rent-value span {
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.property-section {
+  margin-bottom: 32px;
+}
+
+.property-section h3 {
+  margin: 0 0 15px;
+
+  color: #1f2937;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.description {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   PROPERTY INFORMATION
+========================================= */
+
+.property-info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.info-box {
+  padding: 17px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  background: #f9fafb;
+}
+
+.info-label {
+  margin: 0 0 7px;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+.info-value {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.property-actions {
+  padding-top: 25px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.tenant-actin-section{
+  flex: content;
+}
+
+.tenant-actions,
+.landlord-actions {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  
+
+  gap: 15px;
+}
+
+.action-link {
+  display: block;
+
+  text-decoration: none;
+}
+
+.action-link button {
+  width: 100%;
+}
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.book-visit-button,
+.favorite-button,
+.update-property-button,
+.delete-property-button {
+  width: 100%;
+
+  height: 50px;
+
+  padding: 0 20px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* =========================================
+   BOOK VISIT
+========================================= */
+
+.book-visit-button {
+  border: 1px solid #7e22ce;
+
+  background: #7e22ce;
+
+  color: white;
+}
+
+.book-visit-button:hover {
+  background: #6b21a8;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   FAVORITE
+========================================= */
+
+.favorite-button {
+  border: 2px solid #7e22ce;
+
+  background: white;
+
+  color: #7e22ce;
+}
+
+.favorite-button:hover {
+  background: #faf5ff;
+}
+
+/* =========================================
+   UPDATE
+========================================= */
+
+.update-property-button {
+  border: none;
+
+  background: #1f2937;
+
+  color: white;
+}
+
+.update-property-button:hover {
+  background: #111827;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   DELETE
+========================================= */
+
+.delete-property-button {
+  border: none;
+
+  background: #dc2626;
+
+  color: white;
+}
+
+.delete-property-button:hover {
+  background: #b91c1c;
+
+  transform: translateY(-1px);
+}
+
+.delete-property-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* =========================================
+   LOADING / ERROR / NOT FOUND
+========================================= */
+
+.single-property-status {
+  min-height: 70vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 20px;
+
+  background: #f5f3ff;
+}
+
+.status-card {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.status-card h2 {
+  margin: 0 0 12px;
+
+  color: #1f2937;
+
+  font-size: 24px;
+}
+
+.status-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.primary-button {
+  margin-top: 20px;
+
+  padding: 12px 22px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #7e22ce;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.primary-button:hover {
+  background: #6b21a8;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .property-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .property-heading h2 {
+    font-size: 30px;
+  }
+
+  .property-details {
+    padding: 28px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .single-property-header-inner {
+    padding: 20px 15px;
+  }
+
+  .single-property-header h1 {
+    font-size: 25px;
+  }
+
+  .single-property-container {
+    padding: 20px 15px 40px;
+  }
+
+  .property-details {
+    padding: 22px;
+  }
+
+  .property-heading h2 {
+    font-size: 26px;
+  }
+
+  .rent-value p {
+    font-size: 26px;
+  }
+
+  .property-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tenant-actions,
+  .landlord-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .status-card {
+    padding: 30px 20px;
+  }
+}

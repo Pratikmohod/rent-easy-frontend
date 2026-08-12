@@ -1,0 +1,252 @@
+/* ================================
+   PROFILE PAGE
+================================ */
+
+.profile-page {
+  min-height: calc(100vh - 70px);
+  background: #f5f3ff;
+  padding: 40px 20px;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ================================
+   PROFILE HEADER
+================================ */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.profile-avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #7e22ce;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.profile-header-info h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.profile-role {
+  display: inline-block;
+  background: #f3e8ff;
+  color: #7e22ce;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* ================================
+   PROFILE CARD
+================================ */
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card h2 {
+  margin: 0 0 25px;
+
+  font-size: 22px;
+  color: #1f2937;
+
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 15px;
+}
+
+/* ================================
+   PROFILE GRID
+================================ */
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.profile-field {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+
+.profile-field label {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-field p {
+  margin: 0;
+
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 500;
+
+  word-break: break-word;
+}
+
+/* Full width field */
+
+.profile-full {
+  grid-column: 1 / -1;
+}
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+
+  margin-top: 30px;
+  padding-top: 25px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.profile-actions button {
+  border: none;
+  cursor: pointer;
+
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+/* Update Button */
+
+.update-profile-btn {
+  background: #7e22ce;
+  color: white;
+}
+
+.update-profile-btn:hover {
+  background: #6b21a8;
+  transform: translateY(-1px);
+}
+
+/* Delete Button */
+
+.delete-profile-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.delete-profile-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
+/* ================================
+   LOADING
+================================ */
+
+.profile-loading {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #7e22ce;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 25px 15px;
+  }
+
+  .profile-header {
+    padding: 22px;
+  }
+
+  .profile-avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+
+  .profile-header-info h1 {
+    font-size: 24px;
+  }
+
+  .profile-card {
+    padding: 22px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-full {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-card h2 {
+    font-size: 20px;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .profile-actions button {
+    width: 100%;
+  }
+}

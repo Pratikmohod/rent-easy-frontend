@@ -1,0 +1,523 @@
+/* =========================================
+   BOOK PROPERTY PAGE
+========================================= */
+
+.book-property-page {
+  min-height: 100vh;
+
+  background: #f5f3ff;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.book-property-header {
+  background: white;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.book-property-header-inner {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px;
+}
+
+.book-property-breadcrumb {
+  margin: 0 0 8px;
+
+  color: #7e22ce;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.book-property-header h1 {
+  margin: 0 0 8px;
+
+  color: #1f2937;
+
+  font-size: 32px;
+
+  font-weight: 700;
+}
+
+.book-property-header p:last-child {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.book-property-container {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 35px 20px 60px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.book-property-card {
+  overflow: hidden;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.book-property-card-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 25px 30px;
+
+  background: linear-gradient(
+    to right,
+    #faf5ff,
+    #ffffff
+  );
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.book-property-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 13px;
+
+  background: #f3e8ff;
+
+  font-size: 25px;
+}
+
+.book-property-card-header h2 {
+  margin: 0 0 5px;
+
+  color: #1f2937;
+
+  font-size: 21px;
+
+  font-weight: 700;
+}
+
+.book-property-card-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.book-property-error {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin: 25px 30px 0;
+
+  padding: 13px 15px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 9px;
+
+  color: #b91c1c;
+}
+
+.book-property-error span {
+  flex-shrink: 0;
+
+  font-size: 16px;
+}
+
+.book-property-error p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.book-property-form {
+  padding: 30px;
+}
+
+/* =========================================
+   FIELD
+========================================= */
+
+.book-property-field {
+  margin-bottom: 24px;
+}
+
+.book-property-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.book-property-field label span {
+  margin-left: 3px;
+
+  color: #dc2626;
+}
+
+.book-property-field label em {
+  margin-left: 5px;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+
+  font-style: normal;
+
+  font-weight: 400;
+}
+
+.book-property-field input,
+.book-property-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #1f2937;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.book-property-field input {
+  height: 46px;
+}
+
+.book-property-field textarea {
+  resize: vertical;
+
+  min-height: 120px;
+
+  line-height: 1.5;
+}
+
+.book-property-field input:focus,
+.book-property-field textarea:focus {
+  border-color: #7e22ce;
+
+  box-shadow:
+    0 0 0 3px rgba(126, 34, 206, 0.1);
+}
+
+.book-property-field input::placeholder,
+.book-property-field textarea::placeholder {
+  color: #9ca3af;
+}
+
+.book-property-field small {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.book-property-actions {
+  display: flex;
+
+  gap: 14px;
+
+  margin-top: 30px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #f0f0f0;
+}
+
+.book-property-cancel-button,
+.book-property-submit-button {
+  flex: 1;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 0 20px;
+
+  border-radius: 9px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* Cancel */
+
+.book-property-cancel-button {
+  border: 1px solid #d1d5db;
+
+  background: white;
+
+  color: #374151;
+}
+
+.book-property-cancel-button:hover {
+  background: #f9fafb;
+
+  border-color: #9ca3af;
+
+  transform: translateY(-1px);
+}
+
+/* Submit */
+
+.book-property-submit-button {
+  border: 1px solid #7e22ce;
+
+  background: #7e22ce;
+
+  color: white;
+}
+
+.book-property-submit-button:hover {
+  background: #6b21a8;
+
+  border-color: #6b21a8;
+
+  transform: translateY(-1px);
+}
+
+.book-property-cancel-button:disabled,
+.book-property-submit-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* =========================================
+   SPINNER
+========================================= */
+
+.book-property-spinner {
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid rgba(255, 255, 255, 0.4);
+
+  border-top-color: white;
+
+  border-radius: 50%;
+
+  animation:
+    book-property-spin
+    0.7s linear infinite;
+}
+
+@keyframes book-property-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   INFORMATION BOX
+========================================= */
+
+.book-property-information {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  margin: 0 30px 30px;
+
+  padding: 17px;
+
+  background: #f5f3ff;
+
+  border: 1px solid #ddd6fe;
+
+  border-radius: 10px;
+}
+
+.book-property-information-icon {
+  flex-shrink: 0;
+
+  font-size: 18px;
+}
+
+.book-property-information h3 {
+  margin: 0 0 5px;
+
+  color: #5b21b6;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.book-property-information p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .book-property-header-inner {
+    padding: 24px 15px;
+  }
+
+  .book-property-header h1 {
+    font-size: 27px;
+  }
+
+  .book-property-container {
+    padding: 18px 12px 40px;
+  }
+
+  .book-property-card-header {
+    padding: 20px;
+  }
+
+  .book-property-card-header h2 {
+    font-size: 19px;
+  }
+
+  .book-property-form {
+    padding: 22px 20px;
+  }
+
+  .book-property-actions {
+    flex-direction: column;
+  }
+
+  .book-property-cancel-button,
+  .book-property-submit-button {
+    width: 100%;
+  }
+
+  .book-property-information {
+    margin: 0 20px 20px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .book-property-card-header {
+    align-items: flex-start;
+  }
+
+  .book-property-icon {
+    width: 45px;
+    height: 45px;
+
+    font-size: 21px;
+  }
+
+  .book-property-form {
+    padding: 20px 16px;
+  }
+
+  .book-property-information {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}

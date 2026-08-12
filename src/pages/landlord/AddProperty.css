@@ -1,0 +1,592 @@
+/* =========================================
+   ADD PROPERTY PAGE
+========================================= */
+
+.add-property-page {
+  min-height: 100vh;
+  background: #f5f3ff;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.add-property-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.add-property-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.add-property-breadcrumb {
+  margin: 0 0 8px;
+
+  color: #7e22ce;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.add-property-header h1 {
+  margin: 0 0 7px;
+
+  color: #1f2937;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.add-property-header p:last-child {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.add-property-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px 50px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.add-property-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.add-property-section {
+  margin-bottom: 35px;
+}
+
+.add-property-section + .add-property-section {
+  padding-top: 30px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.add-property-section-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.section-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #f3e8ff;
+
+  font-size: 23px;
+}
+
+.add-property-section-header h2 {
+  margin: 0 0 4px;
+
+  color: #1f2937;
+
+  font-size: 21px;
+
+  font-weight: 700;
+}
+
+.add-property-section-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.property-form-wrapper {
+  width: 100%;
+}
+
+/*
+   This allows your existing Form.jsx
+   to remain responsible for rendering
+   the actual fields.
+*/
+
+.property-form-wrapper form {
+  width: 100%;
+}
+
+/* =========================================
+   IMAGE UPLOAD
+========================================= */
+
+.property-upload-area {
+  min-height: 210px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  border: 2px dashed #c084fc;
+
+  border-radius: 14px;
+
+  background: #faf5ff;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.property-upload-area:hover {
+  background: #f3e8ff;
+
+  border-color: #9333ea;
+}
+
+.upload-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #ede9fe;
+
+  font-size: 28px;
+}
+
+.property-upload-area h3 {
+  margin: 0 0 7px;
+
+  color: #374151;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.property-upload-area p {
+  margin: 0;
+
+  color: #8b5cf6;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+.property-image-input {
+  display: none;
+}
+
+/* =========================================
+   SELECTED IMAGES
+========================================= */
+
+.selected-images-section {
+  margin-top: 20px;
+}
+
+.selected-images-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 12px;
+}
+
+.selected-images-header h3 {
+  margin: 0;
+
+  color: #374151;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.selected-images-header span {
+  min-width: 25px;
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 7px;
+
+  border-radius: 50%;
+
+  background: #f3e8ff;
+
+  color: #7e22ce;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.selected-images-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.selected-image-item {
+  padding: 11px 14px;
+
+  border: 1px solid #e9d5ff;
+
+  border-radius: 9px;
+
+  background: #faf5ff;
+}
+
+.selected-image-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.selected-image-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #f3e8ff;
+
+  font-size: 18px;
+}
+
+.selected-image-name {
+  max-width: 600px;
+
+  margin: 0 0 3px;
+
+  overflow: hidden;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.selected-image-size {
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.add-property-error {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+
+  padding: 13px 16px;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 9px;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+}
+
+.add-property-error span {
+  flex-shrink: 0;
+
+  font-size: 17px;
+}
+
+.add-property-error p {
+  margin: 0;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.add-property-actions {
+  display: flex;
+
+  gap: 12px;
+
+  justify-content: flex-end;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.add-property-cancel,
+.add-property-submit {
+  min-width: 170px;
+
+  height: 48px;
+
+  padding: 0 22px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* =========================================
+   CANCEL
+========================================= */
+
+.add-property-cancel {
+  border: 2px solid #e5e7eb;
+
+  background: white;
+
+  color: #374151;
+}
+
+.add-property-cancel:hover {
+  background: #f9fafb;
+
+  border-color: #d1d5db;
+}
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+.add-property-submit {
+  border: none;
+
+  background: #7e22ce;
+
+  color: white;
+}
+
+.add-property-submit:hover {
+  background: #6b21a8;
+
+  transform: translateY(-1px);
+}
+
+.add-property-submit:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.add-property-status {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  background: #f5f3ff;
+
+  color: #7e22ce;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.add-property-spinner {
+  width: 38px;
+  height: 38px;
+
+  border: 4px solid #e9d5ff;
+
+  border-top-color: #7e22ce;
+
+  border-radius: 50%;
+
+  animation: add-property-spin 0.8s linear infinite;
+}
+
+@keyframes add-property-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+  .add-property-card {
+    padding: 22px;
+  }
+
+  .add-property-header-inner {
+    padding: 25px 18px;
+  }
+
+  .add-property-header h1 {
+    font-size: 28px;
+  }
+
+  .add-property-actions {
+    flex-direction: column-reverse;
+  }
+
+  .add-property-cancel,
+  .add-property-submit {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+  .add-property-container {
+    padding: 18px 12px 35px;
+  }
+
+  .add-property-card {
+    padding: 18px;
+
+    border-radius: 14px;
+  }
+
+  .add-property-section-header {
+    align-items: flex-start;
+  }
+
+  .section-icon {
+    width: 43px;
+    height: 43px;
+
+    font-size: 19px;
+  }
+
+  .add-property-section-header h2 {
+    font-size: 18px;
+  }
+
+  .add-property-section-header p {
+    font-size: 13px;
+  }
+
+  .property-upload-area {
+    min-height: 180px;
+
+    padding: 20px;
+  }
+
+  .selected-image-name {
+    max-width: 200px;
+  }
+}

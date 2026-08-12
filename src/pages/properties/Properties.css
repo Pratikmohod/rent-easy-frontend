@@ -1,0 +1,635 @@
+/* =========================================
+   PROPERTIES PAGE
+========================================= */
+
+.properties-page {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+
+  background-color: #f9fafb;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.properties-page-header {
+  width: 100%;
+
+  padding: 55px 24px;
+
+  background: linear-gradient(
+    135deg,
+    #581c87,
+    #7e22ce,
+    #9333ea
+  );
+}
+
+.properties-header-content {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  color: white;
+}
+
+.properties-eyebrow {
+  margin: 0 0 10px;
+
+  color: #e9d5ff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.properties-header-content h1 {
+  margin: 0;
+
+  font-size: 40px;
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.properties-subtitle {
+  margin: 14px auto 0;
+
+  max-width: 650px;
+
+  color: #f3e8ff;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   SEARCH & FILTER SECTION
+========================================= */
+
+.properties-filter-section {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 30px 24px 0;
+}
+
+.properties-filters {
+  display: grid;
+
+  grid-template-columns:
+    minmax(220px, 2fr)
+    minmax(160px, 1fr)
+    minmax(140px, 1fr)
+    minmax(180px, 1fr)
+    auto;
+
+  gap: 15px;
+
+  align-items: end;
+
+  padding: 22px;
+
+  background-color: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   FILTER
+========================================= */
+
+.property-filter {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.property-filter label {
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.property-filter input,
+.property-filter select {
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 9px 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  background-color: white;
+
+  color: #1f2937;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.property-filter input:focus,
+.property-filter select:focus {
+  border-color: #7e22ce;
+
+  box-shadow: 0 0 0 3px rgba(126, 34, 206, 0.12);
+}
+
+.property-filter input::placeholder {
+  color: #9ca3af;
+}
+
+
+/* =========================================
+   CLEAR FILTER BUTTON
+========================================= */
+
+.properties-clear-btn {
+  min-height: 42px;
+
+  padding: 9px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #7e22ce;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.properties-clear-btn:hover {
+  background-color: #6b21a8;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   PROPERTIES LIST SECTION
+========================================= */
+
+.properties-list-section {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 45px 24px 70px;
+}
+
+
+/* =========================================
+   LIST HEADER
+========================================= */
+
+.properties-list-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 30px;
+}
+
+.properties-list-header h2 {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 30px;
+
+  font-weight: 800;
+}
+
+.properties-list-header p {
+  margin: 7px 0 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+.properties-count {
+  flex-shrink: 0;
+
+  padding: 8px 15px;
+
+  border-radius: 999px;
+
+  background-color: #f3e8ff;
+
+  color: #7e22ce;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.properties-empty {
+  padding: 70px 20px;
+
+  background-color: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.properties-empty-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #f3e8ff;
+
+  font-size: 32px;
+}
+
+.properties-empty h3 {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+.properties-empty p {
+  margin: 8px 0 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   LOADING / STATUS
+========================================= */
+
+.properties-status {
+  min-height: 60vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  color: #374151;
+}
+
+.properties-status h2 {
+  margin: 0;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   LOADING SPINNER
+========================================= */
+
+.properties-spinner {
+  width: 42px;
+  height: 42px;
+
+  border: 4px solid #e9d5ff;
+
+  border-top-color: #7e22ce;
+
+  border-radius: 50%;
+
+  animation: properties-spin 0.8s linear infinite;
+}
+
+@keyframes properties-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.properties-error {
+  color: #dc2626;
+}
+
+.properties-error h2 {
+  max-width: 500px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   RETRY BUTTON
+========================================= */
+
+.properties-retry {
+  padding: 11px 22px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #7e22ce;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.properties-retry:hover {
+  background-color: #6b21a8;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.properties-pagination {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  margin-top: 40px;
+}
+
+.properties-pagination button {
+  min-width: 110px;
+
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #7e22ce;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.properties-pagination button:hover:not(:disabled) {
+  background-color: #6b21a8;
+
+  transform: translateY(-1px);
+}
+
+.properties-pagination button:disabled {
+  background-color: #d1d5db;
+
+  color: #6b7280;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+.properties-pagination span {
+  min-width: 80px;
+
+  text-align: center;
+
+  color: #374151;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .properties-page-header {
+    padding: 45px 20px;
+  }
+
+  .properties-header-content h1 {
+    font-size: 32px;
+  }
+
+  .properties-subtitle {
+    font-size: 16px;
+  }
+
+
+  /* Filters */
+
+  .properties-filter-section {
+    padding: 25px 20px 0;
+  }
+
+  .properties-filters {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 20px;
+  }
+
+
+  /* List */
+
+  .properties-list-section {
+    padding: 35px 20px 55px;
+  }
+
+  .properties-list-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .properties-list-header h2 {
+    font-size: 27px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .properties-page-header {
+    padding: 40px 16px;
+  }
+
+  .properties-eyebrow {
+    font-size: 12px;
+  }
+
+  .properties-header-content h1 {
+    font-size: 28px;
+  }
+
+  .properties-subtitle {
+    font-size: 15px;
+  }
+
+
+  /* Filters */
+
+  .properties-filter-section {
+    padding: 20px 16px 0;
+  }
+
+  .properties-filters {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    padding: 18px;
+  }
+
+
+  /* List */
+
+  .properties-list-section {
+    padding: 30px 16px 45px;
+  }
+
+  .properties-list-header h2 {
+    font-size: 24px;
+  }
+
+  .properties-count {
+    font-size: 13px;
+  }
+
+
+  /* Pagination */
+
+  .properties-pagination {
+    gap: 10px;
+
+    margin-top: 30px;
+  }
+
+  .properties-pagination button {
+    min-width: 90px;
+
+    padding: 9px 12px;
+
+    font-size: 13px;
+  }
+
+  .properties-pagination span {
+    min-width: 65px;
+
+    font-size: 14px;
+  }
+
+
+  /* Empty */
+
+  .properties-empty {
+    padding: 50px 16px;
+  }
+
+  .properties-empty h3 {
+    font-size: 20px;
+  }
+
+  .properties-empty p {
+    font-size: 14px;
+  }
+}

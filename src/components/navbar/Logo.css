@@ -1,0 +1,35 @@
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #7e22ce;
+  line-height: 1;
+  transition: opacity 0.2s ease;
+}
+
+.logo span {
+  color: #1f2937;
+}
+
+.logo-link:hover .logo {
+  opacity: 0.85;
+}
+
+/* Tablet */
+@media (max-width: 640px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  .logo {
+    font-size: 24px;
+  }
+}

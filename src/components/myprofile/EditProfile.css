@@ -1,0 +1,287 @@
+/* =================================
+   EDIT PROFILE PAGE
+================================= */
+
+.edit-profile-page {
+  min-height: calc(100vh - 70px);
+  background: #f5f3ff;
+  padding: 40px 20px;
+}
+
+.edit-profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 35px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* =================================
+   HEADER
+================================= */
+
+.edit-profile-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.edit-profile-header h1 {
+  margin: 0 0 8px;
+
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.edit-profile-header p {
+  margin: 0;
+
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* =================================
+   ERROR MESSAGE
+================================= */
+
+.edit-profile-error {
+  background: #fee2e2;
+  color: #b91c1c;
+
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+
+  padding: 12px 15px;
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* =================================
+   FORM
+================================= */
+
+.edit-profile-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+/* =================================
+   FORM GROUP
+================================= */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* =================================
+   INPUT / SELECT / TEXTAREA
+================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: white;
+
+  color: #1f2937;
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #7e22ce;
+
+  box-shadow: 0 0 0 3px rgba(126, 34, 206, 0.1);
+}
+
+/* Textarea */
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Select */
+
+.form-group select {
+  cursor: pointer;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.edit-profile-actions {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+
+  margin-top: 10px;
+  padding-top: 25px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Update Button */
+
+.save-profile-btn {
+  border: none;
+  border-radius: 8px;
+
+  padding: 12px 25px;
+
+  background: #7e22ce;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.save-profile-btn:hover {
+  background: #6b21a8;
+  transform: translateY(-1px);
+}
+
+.save-profile-btn:disabled {
+  background: #a78bca;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Cancel Button */
+
+.cancel-profile-btn {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  padding: 12px 25px;
+
+  background: white;
+  color: #374151;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.cancel-profile-btn:hover {
+  background: #f3f4f6;
+}
+
+/* =================================
+   LOADING
+================================= */
+
+.edit-profile-loading {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #7e22ce;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 768px) {
+  .edit-profile-page {
+    padding: 25px 15px;
+  }
+
+  .edit-profile-container {
+    padding: 25px;
+  }
+
+  .edit-profile-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: auto;
+  }
+
+  .edit-profile-actions {
+    grid-column: auto;
+  }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 480px) {
+  .edit-profile-container {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .edit-profile-header h1 {
+    font-size: 25px;
+  }
+
+  .edit-profile-header p {
+    font-size: 14px;
+  }
+
+  .edit-profile-actions {
+    flex-direction: column;
+  }
+
+  .save-profile-btn,
+  .cancel-profile-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,915 @@
+/* =========================================================
+   LANDLORD BOOKINGS PAGE
+========================================================= */
+
+.landlord-bookings-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f7f5fb;
+  color: #1f2937;
+
+  box-sizing: border-box;
+}
+
+.landlord-bookings-page *,
+.landlord-bookings-page *::before,
+.landlord-bookings-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.landlord-bookings-header {
+  width: 100%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.landlord-bookings-header-inner {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 24px 18px;
+}
+
+.landlord-bookings-breadcrumb {
+  margin: 0 0 5px;
+
+  color: #7e22ce;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+
+.landlord-bookings-header h1 {
+  margin: 0 0 5px;
+
+  color: #111827;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.landlord-bookings-header p:last-child {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.landlord-bookings-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 22px 24px 40px;
+}
+
+
+/* =========================================================
+   BOOKINGS GRID
+========================================================= */
+
+.landlord-bookings-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   BOOKING CARD
+========================================================= */
+
+.landlord-booking-card {
+  width: 100%;
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.landlord-booking-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #ddd6fe;
+
+  box-shadow:
+    0 10px 24px rgba(126, 34, 206, 0.10);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.landlord-booking-card-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding-bottom: 11px;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.landlord-booking-card-header > div {
+  min-width: 0;
+
+  flex: 1;
+}
+
+
+/* =========================================================
+   PROPERTY LABEL
+========================================================= */
+
+.landlord-property-label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #7e22ce;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   PROPERTY TITLE
+========================================================= */
+
+.landlord-booking-card-header h2 {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1.35;
+
+  display: -webkit-box;
+
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   STATUS
+   Same color for every status
+========================================================= */
+
+.landlord-booking-status {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 10px;
+
+  border-radius: 40px;
+
+  background: #f1f5f9;
+
+  border: 1px solid #cbd5e1;
+
+  color: #475569;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: capitalize;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   BOOKING INFORMATION
+========================================================= */
+
+.landlord-booking-info {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 8px;
+
+  padding: 12px 0;
+}
+
+
+/* =========================================================
+   INFO ITEM
+========================================================= */
+
+.landlord-info-item {
+  min-width: 0;
+
+  padding: 9px 10px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+}
+
+
+/* =========================================================
+   INFO LABEL
+========================================================= */
+
+.landlord-info-label {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #64748b;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   INFO VALUE
+========================================================= */
+
+.landlord-info-item strong {
+  display: block;
+
+  min-width: 0;
+
+  color: #1e293b;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  line-height: 1.35;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.landlord-message {
+  padding: 9px 10px;
+
+  background: #faf5ff;
+
+  border: 1px solid #eadcff;
+
+  border-radius: 8px;
+}
+
+
+/* =========================================================
+   MESSAGE LABEL
+========================================================= */
+
+.landlord-message span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #7e22ce;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   MESSAGE TEXT
+========================================================= */
+
+.landlord-message p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  display: -webkit-box;
+
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.landlord-booking-footer {
+  margin-top: 11px;
+
+  padding-top: 10px;
+
+  border-top: 1px solid #f0f0f0;
+}
+
+
+/* =========================================================
+   VIEW BUTTON
+========================================================= */
+
+.landlord-view-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  width: 100%;
+
+  min-height: 36px;
+
+  padding: 0 12px;
+
+  border-radius: 8px;
+
+  background: #7e22ce;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.landlord-view-button:hover {
+  background: #6b21a8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 12px rgba(126, 34, 206, 0.20);
+}
+
+.landlord-view-button span {
+  font-size: 16px;
+
+  line-height: 1;
+
+  transition: transform 0.2s ease;
+}
+
+.landlord-view-button:hover span {
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.landlord-empty-state {
+  width: 100%;
+
+  padding: 55px 25px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.landlord-empty-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 14px;
+
+  border-radius: 50%;
+
+  background: #f3e8ff;
+
+  font-size: 25px;
+}
+
+.landlord-empty-state h2 {
+  margin: 0 0 6px;
+
+  color: #1e293b;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.landlord-empty-state p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.landlord-bookings-status {
+  min-height: 60vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  background: #f7f5fb;
+
+  color: #7e22ce;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.landlord-bookings-spinner {
+  width: 30px;
+  height: 30px;
+
+  border: 3px solid #e9d5ff;
+
+  border-top-color: #7e22ce;
+
+  border-radius: 50%;
+
+  animation: landlord-bookings-spin 0.8s linear infinite;
+}
+
+@keyframes landlord-bookings-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.landlord-bookings-error {
+  width: 90%;
+
+  max-width: 420px;
+
+  margin: 50px auto;
+
+  padding: 28px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.landlord-error-icon {
+  margin-bottom: 8px;
+
+  font-size: 28px;
+}
+
+.landlord-bookings-error h2 {
+  margin: 0 0 7px;
+
+  color: #1e293b;
+
+  font-size: 20px;
+}
+
+.landlord-bookings-error p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.landlord-retry-button {
+  margin-top: 14px;
+
+  padding: 8px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #7e22ce;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.landlord-retry-button:hover {
+  background: #6b21a8;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1201px+
+========================================================= */
+
+@media (min-width: 1201px) {
+  .landlord-bookings-container,
+  .landlord-bookings-header-inner {
+    max-width: 1200px;
+  }
+
+  .landlord-bookings-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+  }
+
+  .landlord-booking-card {
+    padding: 16px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+   901px - 1200px
+========================================================= */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .landlord-bookings-header-inner {
+    padding: 20px;
+  }
+
+  .landlord-bookings-container {
+    padding: 20px;
+  }
+
+  .landlord-bookings-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+  .landlord-booking-card {
+    padding: 14px;
+  }
+
+  .landlord-booking-card-header h2 {
+    font-size: 16px;
+  }
+
+  .landlord-info-item strong {
+    font-size: 12px;
+  }
+
+  .landlord-message p {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   601px - 900px
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .landlord-bookings-header-inner {
+    padding: 19px 18px;
+  }
+
+  .landlord-bookings-header h1 {
+    font-size: 25px;
+  }
+
+  .landlord-bookings-container {
+    padding: 19px 18px 30px;
+  }
+
+  .landlord-bookings-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+  .landlord-booking-card {
+    padding: 15px;
+  }
+
+  .landlord-booking-card-header h2 {
+    font-size: 16px;
+  }
+
+  .landlord-info-item strong {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   451px - 600px
+========================================================= */
+
+@media (max-width: 600px) {
+  .landlord-bookings-header-inner {
+    padding: 17px 14px;
+  }
+
+  .landlord-bookings-header h1 {
+    font-size: 23px;
+  }
+
+  .landlord-bookings-header p:last-child {
+    font-size: 13px;
+  }
+
+  .landlord-bookings-container {
+    padding: 15px 12px 25px;
+  }
+
+  .landlord-bookings-list {
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+  }
+
+  .landlord-booking-card {
+    padding: 14px;
+
+    border-radius: 12px;
+  }
+
+  .landlord-booking-card-header h2 {
+    font-size: 16px;
+  }
+
+  .landlord-booking-status {
+    padding: 5px 9px;
+
+    font-size: 10px;
+  }
+
+  .landlord-booking-info {
+    gap: 8px;
+
+    padding: 11px 0;
+  }
+
+  .landlord-info-item {
+    padding: 9px;
+  }
+
+  .landlord-info-label {
+    font-size: 9px;
+  }
+
+  .landlord-info-item strong {
+    font-size: 12px;
+  }
+
+  .landlord-message {
+    padding: 9px 10px;
+  }
+
+  .landlord-message p {
+    font-size: 11px;
+  }
+
+  .landlord-view-button {
+    min-height: 35px;
+
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   360px - 450px
+========================================================= */
+
+@media (max-width: 450px) {
+  .landlord-bookings-header-inner {
+    padding: 16px 12px;
+  }
+
+  .landlord-bookings-header h1 {
+    font-size: 22px;
+  }
+
+  .landlord-bookings-container {
+    padding: 13px 10px 22px;
+  }
+
+  .landlord-bookings-list {
+    gap: 11px;
+  }
+
+  .landlord-booking-card {
+    padding: 13px;
+  }
+
+  .landlord-booking-card-header {
+    gap: 8px;
+  }
+
+  .landlord-booking-card-header h2 {
+    font-size: 15px;
+  }
+
+  .landlord-booking-info {
+    gap: 7px;
+
+    padding: 10px 0;
+  }
+
+  .landlord-info-item {
+    padding: 8px;
+  }
+
+  .landlord-info-label {
+    font-size: 8px;
+  }
+
+  .landlord-info-item strong {
+    font-size: 11px;
+  }
+
+  .landlord-message {
+    padding: 8px 9px;
+  }
+
+  .landlord-message p {
+    font-size: 10px;
+  }
+
+  .landlord-booking-footer {
+    margin-top: 9px;
+
+    padding-top: 8px;
+  }
+
+  .landlord-view-button {
+    min-height: 34px;
+
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   360px and below
+========================================================= */
+
+@media (max-width: 360px) {
+  .landlord-booking-card {
+    padding: 12px;
+  }
+
+  .landlord-booking-card-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .landlord-booking-status {
+    align-self: flex-start;
+  }
+
+  .landlord-booking-info {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 6px;
+  }
+
+  .landlord-info-item {
+    padding: 7px;
+  }
+
+  .landlord-info-item strong {
+    font-size: 11px;
+  }
+
+  .landlord-view-button {
+    min-height: 33px;
+
+    font-size: 10px;
+  }
+}
