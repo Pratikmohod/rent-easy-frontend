@@ -1,6 +1,4 @@
-/* =========================================
-   BOOK PROPERTY PAGE
-========================================= */
+/* BOOK PROPERTY PAGE*/
 
 .book-property-page {
   min-height: 100vh;
@@ -8,9 +6,7 @@
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER*/
 
 .book-property-header {
   background: white;
@@ -54,9 +50,7 @@
   font-size: 15px;
 }
 
-/* =========================================
-   CONTAINER
-========================================= */
+/* CONTAINER*/
 
 .book-property-container {
   max-width: 850px;
@@ -66,9 +60,7 @@
   padding: 35px 20px 60px;
 }
 
-/* =========================================
-   CARD
-========================================= */
+/* CARD*/
 
 .book-property-card {
   overflow: hidden;
@@ -83,9 +75,7 @@
     0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* =========================================
-   CARD HEADER
-========================================= */
+/* CARD HEADER*/
 
 .book-property-card-header {
   display: flex;
@@ -141,9 +131,7 @@
   font-size: 14px;
 }
 
-/* =========================================
-   ERROR
-========================================= */
+/* ERROR*/
 
 .book-property-error {
   display: flex;
@@ -179,17 +167,13 @@
   line-height: 1.5;
 }
 
-/* =========================================
-   FORM
-========================================= */
+/* FORM*/
 
 .book-property-form {
   padding: 30px;
 }
 
-/* =========================================
-   FIELD
-========================================= */
+/* FIELD*/
 
 .book-property-field {
   margin-bottom: 24px;
@@ -287,9 +271,7 @@
   font-size: 12px;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/* ACTIONS*/
 
 .book-property-actions {
   display: flex;
@@ -380,9 +362,7 @@
   transform: none;
 }
 
-/* =========================================
-   SPINNER
-========================================= */
+/* SPINNER*/
 
 .book-property-spinner {
   width: 17px;
@@ -405,9 +385,7 @@
   }
 }
 
-/* =========================================
-   INFORMATION BOX
-========================================= */
+/* INFORMATION BOX*/
 
 .book-property-information {
   display: flex;
@@ -453,9 +431,7 @@
   line-height: 1.6;
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE*/
 
 @media (max-width: 600px) {
   .book-property-header-inner {
@@ -496,9 +472,7 @@
   }
 }
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
+/* SMALL MOBILE*/
 
 @media (max-width: 400px) {
   .book-property-card-header {

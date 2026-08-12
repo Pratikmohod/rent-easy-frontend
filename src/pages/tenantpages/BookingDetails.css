@@ -1,15 +1,11 @@
-/* =========================================
-   BOOKING DETAILS PAGE
-========================================= */
+/* BOOKING DETAILS PAGE*/
 
 .booking-details-page {
   min-height: 100vh;
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER*/
 
 .booking-details-header {
   background: white;
@@ -57,9 +53,7 @@
   font-weight: 700;
 }
 
-/* =========================================
-   CONTAINER
-========================================= */
+/* CONTAINER*/
 
 .booking-details-container {
   max-width: 1050px;
@@ -69,9 +63,7 @@
   padding: 30px 20px 50px;
 }
 
-/* =========================================
-   MAIN CARD
-========================================= */
+/* MAIN CARD*/
 
 .booking-details-card {
   overflow: hidden;
@@ -86,9 +78,7 @@
     0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* =========================================
-   PROPERTY IMAGE
-========================================= */
+/* PROPERTY IMAGE*/
 
 .booking-property-image-container {
   width: 100%;
@@ -108,17 +98,13 @@
   object-fit: cover;
 }
 
-/* =========================================
-   CONTENT
-========================================= */
+/* CONTENT*/
 
 .booking-details-content {
   padding: 30px;
 }
 
-/* =========================================
-   PROPERTY HEADER
-========================================= */
+/* PROPERTY HEADER*/
 
 .booking-property-header {
   display: flex;
@@ -160,9 +146,7 @@
   font-weight: 700;
 }
 
-/* =========================================
-   STATUS
-========================================= */
+/* STATUS*/
 
 .booking-details-status {
   flex-shrink: 0;
@@ -208,9 +192,7 @@
   color: #4b5563;
 }
 
-/* =========================================
-   SECTION
-========================================= */
+/* SECTION*/
 
 .booking-details-section {
   padding: 25px 0;
@@ -227,9 +209,7 @@
   font-weight: 700;
 }
 
-/* =========================================
-   INFO GRID
-========================================= */
+/* INFO GRID*/
 
 .booking-info-grid {
   display: grid;
@@ -276,9 +256,7 @@
   word-break: break-word;
 }
 
-/* =========================================
-   MESSAGE
-========================================= */
+/* MESSAGE*/
 
 .booking-message-box {
   padding: 18px;
@@ -296,9 +274,7 @@
   line-height: 1.7;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/* ACTIONS*/
 
 .booking-details-actions {
   display: flex;
@@ -363,9 +339,7 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   STATUS INFORMATION
-========================================= */
+/* STATUS INFORMATION*/
 
 .booking-info-message {
   margin-top: 25px;
@@ -413,9 +387,7 @@
   color: #4b5563;
 }
 
-/* =========================================
-   LOADING
-========================================= */
+/* LOADING*/
 
 .booking-details-status-page {
   min-height: 70vh;
@@ -458,9 +430,7 @@
   }
 }
 
-/* =========================================
-   ERROR
-========================================= */
+/* ERROR*/
 
 .booking-details-error {
   width: 100%;
@@ -529,9 +499,7 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   NOT FOUND
-========================================= */
+/* NOT FOUND*/
 
 .booking-details-not-found {
   width: 100%;
@@ -570,9 +538,7 @@
   color: #6b7280;
 }
 
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET*/
 
 @media (max-width: 700px) {
   .booking-property-header {
@@ -592,9 +558,7 @@
   }
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE*/
 
 @media (max-width: 500px) {
   .booking-details-header-inner {

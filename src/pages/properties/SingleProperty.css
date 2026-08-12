@@ -1,15 +1,11 @@
-/* =========================================
-   SINGLE PROPERTY PAGE
-========================================= */
+/* SINGLE PROPERTY PAGE*/
 
 .single-property-page {
   min-height: 100vh;
   background: #f5f3ff;
 }
 
-/* =========================================
-   PAGE HEADER
-========================================= */
+/* PAGE HEADER*/
 
 .single-property-header {
   background: white;
@@ -40,9 +36,7 @@
   font-weight: 700;
 }
 
-/* =========================================
-   MAIN CONTAINER
-========================================= */
+/* MAIN CONTAINER*/
 
 .single-property-container {
   max-width: 1200px;
@@ -52,9 +46,7 @@
   padding: 30px 20px 50px;
 }
 
-/* =========================================
-   PROPERTY CARD
-========================================= */
+/* PROPERTY CARD*/
 
 .single-property-card {
   background: white;
@@ -67,26 +59,20 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
 }
 
-/* =========================================
-   IMAGE GALLERY
-========================================= */
+/* IMAGE GALLERY*/
 
 .property-gallery {
   width: 100%;
   background: #f3f4f6;
 }
 
-/* =========================================
-   PROPERTY DETAILS
-========================================= */
+/* PROPERTY DETAILS*/
 
 .property-details {
   padding: 35px;
 }
 
-/* =========================================
-   TITLE
-========================================= */
+/* TITLE*/
 
 .property-heading {
   margin-bottom: 28px;
@@ -121,9 +107,7 @@
   line-height: 1.2;
 }
 
-/* =========================================
-   RENT
-========================================= */
+/* RENT*/
 
 .rent-box {
   margin-bottom: 32px;
@@ -166,9 +150,7 @@
   font-size: 14px;
 }
 
-/* =========================================
-   SECTIONS
-========================================= */
+/* SECTIONS*/
 
 .property-section {
   margin-bottom: 32px;
@@ -193,9 +175,7 @@
   line-height: 1.8;
 }
 
-/* =========================================
-   PROPERTY INFORMATION
-========================================= */
+/* PROPERTY INFORMATION*/
 
 .property-info-grid {
   display: grid;
@@ -236,9 +216,7 @@
   text-transform: capitalize;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/* ACTIONS*/
 
 .property-actions {
   padding-top: 25px;
@@ -270,9 +248,7 @@
   width: 100%;
 }
 
-/* =========================================
-   COMMON BUTTON
-========================================= */
+/* COMMON BUTTON*/
 
 .book-visit-button,
 .favorite-button,
@@ -294,9 +270,7 @@
   transition: all 0.2s ease;
 }
 
-/* =========================================
-   BOOK VISIT
-========================================= */
+/* BOOK VISIT*/
 
 .book-visit-button {
   border: 1px solid #7e22ce;
@@ -312,9 +286,7 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   FAVORITE
-========================================= */
+/* FAVORITE*/
 
 .favorite-button {
   border: 2px solid #7e22ce;
@@ -328,9 +300,7 @@
   background: #faf5ff;
 }
 
-/* =========================================
-   UPDATE
-========================================= */
+/* UPDATE*/
 
 .update-property-button {
   border: none;
@@ -346,9 +316,7 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   DELETE
-========================================= */
+/* DELETE*/
 
 .delete-property-button {
   border: none;
@@ -372,9 +340,7 @@
   transform: none;
 }
 
-/* =========================================
-   LOADING / ERROR / NOT FOUND
-========================================= */
+/* LOADING / ERROR / NOT FOUND*/
 
 .single-property-status {
   min-height: 70vh;
@@ -420,9 +386,7 @@
   line-height: 1.6;
 }
 
-/* =========================================
-   PRIMARY BUTTON
-========================================= */
+/* PRIMARY BUTTON*/
 
 .primary-button {
   margin-top: 20px;
@@ -449,9 +413,7 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET*/
 
 @media (max-width: 900px) {
   .property-info-grid {
@@ -467,9 +429,7 @@
   }
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE*/
 
 @media (max-width: 600px) {
   .single-property-header-inner {

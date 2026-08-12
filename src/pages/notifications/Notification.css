@@ -1,15 +1,13 @@
-/* =========================================
-   NOTIFICATION PAGE
-========================================= */
+/*
+   NOTIFICATION PAGE */
 
 .notification-page {
   min-height: 100vh;
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/*
+   HEADER */
 
 .notification-header {
   background: white;
@@ -58,9 +56,7 @@
   font-size: 15px;
 }
 
-/* =========================================
-   MARK ALL BUTTON
-========================================= */
+/*MARK ALL BUTTON */
 
 .mark-all-button {
   flex-shrink: 0;
@@ -89,9 +85,8 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   MAIN CONTAINER
-========================================= */
+/*
+   MAIN CONTAINER */
 
 .notification-container {
   max-width: 1100px;
@@ -101,9 +96,8 @@
   padding: 30px 20px 50px;
 }
 
-/* =========================================
-   NOTIFICATION LIST
-========================================= */
+/*
+   NOTIFICATION LIST */
 
 .notification-list {
   display: flex;
@@ -113,9 +107,8 @@
   gap: 15px;
 }
 
-/* =========================================
-   NOTIFICATION CARD
-========================================= */
+/*
+   NOTIFICATION CARD */
 
 .notification-card {
   position: relative;
@@ -145,9 +138,8 @@
   transform: translateY(-2px);
 }
 
-/* =========================================
-   UNREAD CARD
-========================================= */
+/*
+   UNREAD CARD */
 
 .notification-unread {
   border-color: #d8b4fe;
@@ -155,9 +147,8 @@
   background: #faf5ff;
 }
 
-/* =========================================
-   UNREAD DOT
-========================================= */
+/*
+   UNREAD DOT */
 
 .unread-dot {
   position: absolute;
@@ -173,9 +164,8 @@
   background: #7e22ce;
 }
 
-/* =========================================
-   ICON
-========================================= */
+/*
+   ICON */
 
 .notification-icon {
   width: 48px;
@@ -193,9 +183,8 @@
   font-size: 22px;
 }
 
-/* =========================================
-   CONTENT
-========================================= */
+/*
+   CONTENT */
 
 .notification-content {
   min-width: 0;
@@ -227,9 +216,8 @@
   line-height: 1.6;
 }
 
-/* =========================================
-   STATUS BADGE
-========================================= */
+/*
+   STATUS BADGE */
 
 .notification-status-badge {
   flex-shrink: 0;
@@ -255,9 +243,8 @@
   color: #7e22ce;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
+/*
+   FOOTER */
 
 .notification-footer {
   grid-column: 2;
@@ -282,9 +269,8 @@
   font-size: 13px;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/*
+   ACTIONS */
 
 .notification-actions {
   display: flex;
@@ -292,9 +278,8 @@
   gap: 10px;
 }
 
-/* =========================================
-   VIEW BUTTON
-========================================= */
+/*
+   VIEW BUTTON */
 
 .notification-view-button {
   display: inline-flex;
@@ -319,14 +304,12 @@
 
   transition: all 0.2s ease;
 }
-
 .notification-view-button:hover {
   background: #f5f3ff;
 }
 
-/* =========================================
-   DELETE BUTTON
-========================================= */
+/*
+   DELETE BUTTON */
 
 .notification-delete-button {
   padding: 8px 16px;
@@ -351,9 +334,8 @@
   background: #b91c1c;
 }
 
-/* =========================================
-   EMPTY STATE
-========================================= */
+/*
+   EMPTY STATE */
 
 .empty-notification-card {
   padding: 60px 30px;
@@ -403,9 +385,8 @@
   font-size: 15px;
 }
 
-/* =========================================
-   BROWSE PROPERTY BUTTON
-========================================= */
+/*
+   BROWSE PROPERTY BUTTON */
 
 .browse-property-button {
   margin-top: 20px;
@@ -431,9 +412,8 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   LOADING
-========================================= */
+/*
+   LOADING */
 
 .notification-status {
   min-height: 70vh;
@@ -474,9 +454,8 @@
   }
 }
 
-/* =========================================
-   ERROR
-========================================= */
+/*
+   ERROR */
 
 .notification-error-card {
   width: 100%;
@@ -538,9 +517,8 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   TABLET
-========================================= */
+/*
+   TABLET */
 
 @media (max-width: 768px) {
   .notification-title-row {
@@ -565,9 +543,8 @@
   }
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/*
+   MOBILE */
 
 @media (max-width: 550px) {
   .notification-header-inner {

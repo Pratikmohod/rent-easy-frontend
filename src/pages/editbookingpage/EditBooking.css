@@ -1,6 +1,4 @@
-/* =========================================
-   EDIT BOOKING PAGE
-========================================= */
+/*  EDIT BOOKING PAGE */
 
 .edit-booking-page {
   min-height: 100vh;
@@ -8,9 +6,7 @@
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/*  HEADER */
 
 .edit-booking-header {
   background: white;
@@ -54,9 +50,7 @@
   font-size: 15px;
 }
 
-/* =========================================
-   CONTAINER
-========================================= */
+/*  CONTAINER */
 
 .edit-booking-container {
   max-width: 850px;
@@ -66,9 +60,7 @@
   padding: 30px 20px 60px;
 }
 
-/* =========================================
-   PROPERTY CARD
-========================================= */
+/*  PROPERTY CARD */
 
 .edit-booking-property-card {
   display: flex;
@@ -137,9 +129,7 @@
   font-size: 13px;
 }
 
-/* =========================================
-   MAIN CARD
-========================================= */
+/*  MAIN CARD */
 
 .edit-booking-card {
   overflow: hidden;
@@ -154,9 +144,7 @@
     0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* =========================================
-   CARD HEADER
-========================================= */
+/*  CARD HEADER */
 
 .edit-booking-card-header {
   display: flex;
@@ -212,9 +200,7 @@
   font-size: 13px;
 }
 
-/* =========================================
-   FORM ERROR
-========================================= */
+/*  FORM ERROR */
 
 .edit-booking-form-error {
   display: flex;
@@ -250,17 +236,13 @@
   line-height: 1.5;
 }
 
-/* =========================================
-   FORM
-========================================= */
+/*  FORM */
 
 .edit-booking-form {
   padding: 30px;
 }
 
-/* =========================================
-   FIELD
-========================================= */
+/*  FIELD */
 
 .edit-booking-field {
   margin-bottom: 24px;
@@ -358,9 +340,7 @@
   font-size: 12px;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/*  ACTIONS */
 
 .edit-booking-actions {
   display: flex;
@@ -451,9 +431,7 @@
   transform: none;
 }
 
-/* =========================================
-   SPINNER
-========================================= */
+/*  SPINNER */
 
 .edit-booking-spinner {
   width: 17px;
@@ -476,9 +454,7 @@
   }
 }
 
-/* =========================================
-   INFORMATION
-========================================= */
+/*  INFORMATION */
 
 .edit-booking-information {
   display: flex;
@@ -524,9 +500,7 @@
   line-height: 1.6;
 }
 
-/* =========================================
-   STATE / LOADING
-========================================= */
+/*  STATE / LOADING */
 
 .edit-booking-state {
   min-height: 60vh;
@@ -586,9 +560,7 @@
   }
 }
 
-/* =========================================
-   STATE ICONS
-========================================= */
+/*  STATE ICONS */
 
 .edit-booking-error-icon,
 .edit-booking-not-found-icon,
@@ -620,9 +592,7 @@
   background: #fef3c7;
 }
 
-/* =========================================
-   STATUS MESSAGE
-========================================= */
+/*  STATUS MESSAGE */
 
 .edit-booking-status {
   margin-bottom: 20px;
@@ -646,9 +616,7 @@
   text-transform: capitalize;
 }
 
-/* =========================================
-   BACK BUTTON
-========================================= */
+/*  BACK BUTTON */
 
 .edit-booking-back-button {
   padding: 11px 22px;
@@ -680,9 +648,7 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/*  MOBILE */
 
 @media (max-width: 600px) {
   .edit-booking-header-inner {
@@ -728,9 +694,7 @@
   }
 }
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
+/*  SMALL MOBILE */
 
 @media (max-width: 400px) {
   .edit-booking-card-header {

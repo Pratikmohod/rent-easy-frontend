@@ -7,9 +7,7 @@
   z-index: 1000;
 }
 
-/* ================================
-   MAIN NAVBAR
-================================ */
+/* MAIN NAVBAR*/
 
 .navbar-main {
   width: 100%;
@@ -23,17 +21,13 @@
   align-items: center;
 }
 
-/* ================================
-   LOGO
-================================ */
+/* LOGO*/
 
 .navbar-logo {
   flex-shrink: 0;
 }
 
-/* ================================
-   DESKTOP NAVIGATION
-================================ */
+/* DESKTOP NAVIGATION*/
 
 .desktop-navigation {
   display: flex;
@@ -47,9 +41,7 @@
   align-items: center;
 }
 
-/* ================================
-   DESKTOP PROFILE
-================================ */
+/* DESKTOP PROFILE*/
 
 .desktop-profile {
   display: flex;
@@ -58,9 +50,7 @@
   margin-left: 20px;
 }
 
-/* ================================
-   MOBILE MENU BUTTON
-================================ */
+/* MOBILE MENU BUTTON*/
 
 .mobile-menu-button {
   display: none;
@@ -100,17 +90,13 @@
   justify-content: center;
 }
 
-/* ================================
-   MOBILE MENU
-================================ */
+/* MOBILE MENU*/
 
 .mobile-menu {
   display: none;
 }
 
-/* ================================
-   TABLET / MOBILE
-================================ */
+/* TABLET / MOBILE*/
 
 @media (max-width: 1024px) {
   .navbar-main {
@@ -172,9 +158,7 @@
   }
 }
 
-/* ================================
-   SMALL MOBILE
-================================ */
+/* SMALL MOBILE*/
 
 @media (max-width: 480px) {
   .navbar-main {
@@ -192,9 +176,7 @@
   }
 }
 
-/* ================================
-   ANIMATION
-================================ */
+/* ANIMATION*/
 
 @keyframes slideDown {
   from {

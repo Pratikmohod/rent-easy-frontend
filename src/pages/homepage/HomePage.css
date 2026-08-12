@@ -1,6 +1,4 @@
-/* ================================
-   HOMEPAGE
-================================ */
+/* HOMEPAGE */
 
 .homepage {
   width: 100%;
@@ -8,9 +6,7 @@
   background-color: #f9fafb;
 }
 
-/* ================================
-   HERO SECTION
-================================ */
+/* HERO SECTION */
 
 .homepage-hero {
   width: 100%;
@@ -72,9 +68,7 @@
   color: #f3e8ff;
 }
 
-/* ================================
-   PROPERTIES SECTION
-================================ */
+/* PROPERTIES SECTION */
 
 .homepage-properties {
   width: 100%;
@@ -85,9 +79,7 @@
   padding: 50px 24px 70px;
 }
 
-/* ================================
-   PROPERTIES HEADER
-================================ */
+/* PROPERTIES HEADER */
 
 .properties-header {
   display: flex;
@@ -129,9 +121,7 @@
   font-size: 15px;
 }
 
-/* ================================
-   PROPERTY COUNT
-================================ */
+/* PROPERTY COUNT */
 
 .property-count {
   flex-shrink: 0;
@@ -147,9 +137,7 @@
   font-weight: 700;
 }
 
-/* =========================================
-   HOMEPAGE PAGINATION
-========================================= */
+/* =========HOMEPAGE PAGINATION========= */
 
 .homepage-pagination {
   display: flex;
@@ -215,9 +203,7 @@
   font-weight: 600;
 }
 
-/* ================================
-   EMPTY PROPERTIES
-================================ */
+/* EMPTY PROPERTIES */
 
 .empty-properties {
   padding: 70px 20px;
@@ -264,9 +250,7 @@
   color: #6b7280;
 }
 
-/* ================================
-   LOADING
-================================ */
+/* LOADING */
 
 .homepage-status {
   min-height: 60vh;
@@ -288,9 +272,7 @@
   font-weight: 600;
 }
 
-/* ================================
-   LOADING SPINNER
-================================ */
+/* LOADING SPINNER */
 
 .loading-spinner {
   width: 42px;
@@ -310,9 +292,7 @@
   }
 }
 
-/* ================================
-   ERROR
-================================ */
+/* ERROR */
 
 .homepage-status.error {
   color: #dc2626;
@@ -349,9 +329,7 @@
   transform: translateY(-1px);
 }
 
-/* ================================
-   TABLET
-================================ */
+/* TABLET */
 
 @media (max-width: 768px) {
   .homepage-hero {
@@ -380,9 +358,7 @@
   }
 }
 
-/* ================================
-   MOBILE
-================================ */
+/* MOBILE */
 
 @media (max-width: 480px) {
   .homepage-hero {

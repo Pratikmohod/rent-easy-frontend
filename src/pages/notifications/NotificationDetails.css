@@ -1,6 +1,4 @@
-/* =========================================
-   NOTIFICATION DETAILS PAGE
-========================================= */
+/* NOTIFICATION DETAILS PAGE*/
 
 .notification-details-page {
   min-height: 100vh;
@@ -8,9 +6,7 @@
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER*/
 
 .notification-details-header {
   background: white;
@@ -54,9 +50,7 @@
   font-size: 15px;
 }
 
-/* =========================================
-   MAIN CONTAINER
-========================================= */
+/* MAIN CONTAINER*/
 
 .notification-details-container {
   max-width: 1000px;
@@ -66,9 +60,7 @@
   padding: 35px 20px 50px;
 }
 
-/* =========================================
-   CARD
-========================================= */
+/* CARD*/
 
 .notification-details-card {
   background: white;
@@ -83,9 +75,7 @@
     0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* =========================================
-   CARD HEADER
-========================================= */
+/* CARD HEADER*/
 
 .details-card-header {
   display: flex;
@@ -137,9 +127,7 @@
   line-height: 1.4;
 }
 
-/* =========================================
-   STATUS BADGE
-========================================= */
+/* STATUS BADGE*/
 
 .details-status-badge {
   flex-shrink: 0;
@@ -165,9 +153,7 @@
   color: #7e22ce;
 }
 
-/* =========================================
-   DIVIDER
-========================================= */
+/* DIVIDER*/
 
 .details-divider {
   height: 1px;
@@ -177,9 +163,7 @@
   background: #e5e7eb;
 }
 
-/* =========================================
-   INFORMATION
-========================================= */
+/* INFORMATION*/
 
 .notification-information {
   display: flex;
@@ -235,9 +219,7 @@
   line-height: 1.7;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/* ACTIONS*/
 
 .notification-details-actions {
   display: flex;
@@ -253,9 +235,7 @@
   border-top: 1px solid #e5e7eb;
 }
 
-/* =========================================
-   BACK BUTTON
-========================================= */
+/* BACK BUTTON*/
 
 .details-back-button {
   padding: 11px 20px;
@@ -283,9 +263,7 @@
   border-color: #d1d5db;
 }
 
-/* =========================================
-   DELETE BUTTON
-========================================= */
+/* DELETE BUTTON*/
 
 .details-delete-button {
   padding: 11px 20px;
@@ -313,9 +291,7 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   LOADING
-========================================= */
+/* LOADING*/
 
 .notification-details-status {
   min-height: 70vh;
@@ -360,9 +336,7 @@
   }
 }
 
-/* =========================================
-   ERROR
-========================================= */
+/* ERROR*/
 
 .notification-details-error {
   width: 100%;
@@ -427,9 +401,7 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE*/
 
 @media (max-width: 600px) {
   .notification-details-header-inner {

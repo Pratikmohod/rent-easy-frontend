@@ -1,15 +1,11 @@
-/* =========================================
-   ADD PROPERTY PAGE
-========================================= */
+/* ADD PROPERTY PAGE */
 
 .add-property-page {
   min-height: 100vh;
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 .add-property-header {
   background: white;
@@ -48,9 +44,7 @@
   font-size: 15px;
 }
 
-/* =========================================
-   MAIN CONTAINER
-========================================= */
+/* MAIN CONTAINER */
 
 .add-property-container {
   max-width: 1100px;
@@ -60,9 +54,7 @@
   padding: 30px 20px 50px;
 }
 
-/* =========================================
-   CARD
-========================================= */
+/* CARD */
 
 .add-property-card {
   background: white;
@@ -77,9 +69,7 @@
     0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* =========================================
-   SECTION
-========================================= */
+/* SECTION */
 
 .add-property-section {
   margin-bottom: 35px;
@@ -91,9 +81,7 @@
   border-top: 1px solid #e5e7eb;
 }
 
-/* =========================================
-   SECTION HEADER
-========================================= */
+/* SECTION HEADER */
 
 .add-property-section-header {
   display: flex;
@@ -141,9 +129,7 @@
   font-size: 14px;
 }
 
-/* =========================================
-   FORM
-========================================= */
+/* FORM */
 
 .property-form-wrapper {
   width: 100%;
@@ -159,9 +145,7 @@
   width: 100%;
 }
 
-/* =========================================
-   IMAGE UPLOAD
-========================================= */
+/* IMAGE UPLOAD */
 
 .property-upload-area {
   min-height: 210px;
@@ -238,9 +222,7 @@
   display: none;
 }
 
-/* =========================================
-   SELECTED IMAGES
-========================================= */
+/* SELECTED IMAGES */
 
 .selected-images-section {
   margin-top: 20px;
@@ -356,9 +338,7 @@
   font-size: 12px;
 }
 
-/* =========================================
-   ERROR
-========================================= */
+/* ERROR */
 
 .add-property-error {
   display: flex;
@@ -396,9 +376,7 @@
   line-height: 1.5;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/* ACTIONS */
 
 .add-property-actions {
   display: flex;
@@ -431,9 +409,7 @@
   transition: all 0.2s ease;
 }
 
-/* =========================================
-   CANCEL
-========================================= */
+/* CANCEL */
 
 .add-property-cancel {
   border: 2px solid #e5e7eb;
@@ -449,9 +425,7 @@
   border-color: #d1d5db;
 }
 
-/* =========================================
-   SUBMIT
-========================================= */
+/* SUBMIT */
 
 .add-property-submit {
   border: none;
@@ -475,9 +449,7 @@
   transform: none;
 }
 
-/* =========================================
-   LOADING
-========================================= */
+/* LOADING */
 
 .add-property-status {
   min-height: 70vh;
@@ -519,9 +491,7 @@
   }
 }
 
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET */
 
 @media (max-width: 768px) {
   .add-property-card {
@@ -546,9 +516,7 @@
   }
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
 @media (max-width: 500px) {
   .add-property-container {

@@ -236,9 +236,7 @@ const Properties = () => {
         </div>
       </section>
 
-      {/* =================================
-          PROPERTIES LIST
-      ================================= */}
+      {/* PROPERTIES LIST */}
 
       <section className="properties-list-section">
         {/* List Header */}
@@ -253,17 +251,13 @@ const Properties = () => {
           <span className="properties-count">{count} Properties</span>
         </div>
 
-        {/* =================================
-            PROPERTY LIST
-        ================================= */}
+        {/* PROPERTY LIST*/}
 
         {properties.length > 0 ? (
           <>
             <PropertyList properties={properties} />
 
-            {/* =================================
-                PAGINATION
-            ================================= */}
+            {/* PAGINATION*/}
 
             <div className="properties-pagination">
               <button
@@ -286,9 +280,7 @@ const Properties = () => {
             </div>
           </>
         ) : (
-          /* =================================
-              EMPTY STATE
-          ================================= */
+          /* EMPTY STATE */
 
           <div className="properties-empty">
             <div className="properties-empty-icon">

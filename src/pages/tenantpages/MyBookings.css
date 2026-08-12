@@ -1,15 +1,11 @@
-/* =========================================
-   MY BOOKINGS PAGE
-========================================= */
+/* MY BOOKINGS PAGE*/
 
 .my-bookings-page {
   min-height: 100vh;
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER*/
 
 .my-bookings-header {
   background: white;
@@ -48,9 +44,7 @@
   font-size: 15px;
 }
 
-/* =========================================
-   CONTAINER
-========================================= */
+/* CONTAINER*/
 
 .my-bookings-container {
   max-width: 1100px;
@@ -60,9 +54,7 @@
   padding: 35px 20px 60px;
 }
 
-/* =========================================
-   EMPTY STATE
-========================================= */
+/* EMPTY STATE*/
 
 .my-bookings-empty {
   max-width: 600px;
@@ -148,9 +140,7 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   BOOKING LIST
-========================================= */
+/* BOOKING LIST*/
 
 .my-bookings-list {
   display: flex;
@@ -160,9 +150,7 @@
   gap: 20px;
 }
 
-/* =========================================
-   BOOKING CARD
-========================================= */
+/* BOOKING CARD*/
 
 .my-booking-card {
   overflow: hidden;
@@ -188,9 +176,7 @@
     0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* =========================================
-   CARD HEADER
-========================================= */
+/* CARD HEADER*/
 
 .my-booking-card-header {
   display: flex;
@@ -229,9 +215,7 @@
   font-size: 13px;
 }
 
-/* =========================================
-   STATUS
-========================================= */
+/* STATUS*/
 
 .my-bookings-status {
   display: inline-flex;
@@ -277,9 +261,7 @@
   color: #4b5563;
 }
 
-/* =========================================
-   INFORMATION
-========================================= */
+/* INFORMATION*/
 
 .my-booking-information {
   display: grid;
@@ -346,9 +328,7 @@
   font-size: 16px;
 }
 
-/* =========================================
-   MESSAGE
-========================================= */
+/* MESSAGE*/
 
 .my-booking-message {
   margin: 0 24px 22px;
@@ -382,9 +362,7 @@
   line-height: 1.6;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER*/
 
 .my-booking-footer {
   padding: 18px 24px;
@@ -439,9 +417,7 @@
   transform: translateX(3px);
 }
 
-/* =========================================
-   LOADING
-========================================= */
+/* LOADING*/
 
 .my-bookings-state {
   min-height: 60vh;
@@ -487,9 +463,7 @@
   }
 }
 
-/* =========================================
-   ERROR
-========================================= */
+/* ERROR*/
 
 .my-bookings-error-icon {
   width: 60px;
@@ -517,9 +491,7 @@
   font-size: 21px;
 }
 
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET*/
 
 @media (max-width: 700px) {
   .my-booking-information {
@@ -527,9 +499,7 @@
   }
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE*/
 
 @media (max-width: 550px) {
   .my-bookings-header-inner {
@@ -574,9 +544,7 @@
   }
 }
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
+/* SMALL MOBILE*/
 
 @media (max-width: 380px) {
   .my-booking-information {

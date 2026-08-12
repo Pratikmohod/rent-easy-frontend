@@ -1,6 +1,4 @@
-/* =========================================
-   LANDLORD BOOKING DETAILS
-========================================= */
+/* LANDLORD BOOKING DETAILS */
 
 .landlord-booking-page {
   min-height: 100vh;
@@ -8,9 +6,7 @@
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 .landlord-booking-header {
   background: white;
@@ -78,9 +74,7 @@
   font-size: 15px;
 }
 
-/* =========================================
-   CONTAINER
-========================================= */
+/* CONTAINER */
 
 .landlord-booking-container {
   max-width: 1000px;
@@ -90,9 +84,7 @@
   padding: 30px 20px 50px;
 }
 
-/* =========================================
-   CARD
-========================================= */
+/* CARD */
 
 .landlord-booking-card {
   overflow: hidden;
@@ -107,9 +99,7 @@
     0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* =========================================
-   PROPERTY IMAGE
-========================================= */
+/* PROPERTY IMAGE */
 
 .booking-property-image-wrapper {
   width: 100%;
@@ -130,9 +120,7 @@
   object-fit: cover;
 }
 
-/* =========================================
-   PROPERTY HEADER
-========================================= */
+/* PROPERTY HEADER */
 
 .booking-property-header {
   display: flex;
@@ -186,9 +174,7 @@
   line-height: 1.5;
 }
 
-/* =========================================
-   STATUS
-========================================= */
+/* STATUS */
 
 .booking-status {
   flex-shrink: 0;
@@ -240,9 +226,7 @@
   color: #4b5563;
 }
 
-/* =========================================
-   DIVIDER
-========================================= */
+/* DIVIDER */
 
 .booking-divider {
   height: 1px;
@@ -252,9 +236,7 @@
   background: #e5e7eb;
 }
 
-/* =========================================
-   SECTION
-========================================= */
+/* SECTION */
 
 .booking-section {
   padding: 28px 30px;
@@ -308,9 +290,7 @@
   font-size: 13px;
 }
 
-/* =========================================
-   INFO GRID
-========================================= */
+/* INFO GRID */
 
 .booking-info-grid {
   display: grid;
@@ -357,9 +337,7 @@
   word-break: break-word;
 }
 
-/* =========================================
-   MESSAGE
-========================================= */
+/* MESSAGE */
 
 .booking-message {
   padding: 18px;
@@ -377,17 +355,13 @@
   line-height: 1.7;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/* ACTIONS */
 
 .booking-actions {
   padding: 25px 30px;
 }
 
-/* =========================================
-   PENDING ACTIONS
-========================================= */
+/* PENDING ACTIONS */
 
 .booking-pending-actions {
   display: grid;
@@ -442,9 +416,7 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   COMPLETE BUTTON
-========================================= */
+/* COMPLETE BUTTON */
 
 .booking-complete-button {
   width: 100%;
@@ -458,9 +430,7 @@
   transform: translateY(-1px);
 }
 
-/* =========================================
-   FINAL STATUS MESSAGE
-========================================= */
+/* FINAL STATUS MESSAGE */
 
 .booking-final-message {
   display: flex;
@@ -512,9 +482,7 @@
   color: #4b5563;
 }
 
-/* =========================================
-   LOADING
-========================================= */
+/* LOADING */
 
 .landlord-booking-status {
   min-height: 70vh;
@@ -561,9 +529,7 @@
   }
 }
 
-/* =========================================
-   ERROR
-========================================= */
+/* ERROR */
 
 .landlord-booking-error {
   width: 100%;
@@ -632,9 +598,7 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET */
 
 @media (max-width: 700px) {
   .booking-property-header {
@@ -650,9 +614,7 @@
   }
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
 @media (max-width: 500px) {
   .landlord-booking-header-inner {

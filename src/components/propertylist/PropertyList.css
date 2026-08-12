@@ -1,6 +1,4 @@
-/* =================================
-   PROPERTY LIST
-================================= */
+/* PROPERTY LIST*/
 
 .property-list {
   width: 100%;
@@ -13,9 +11,7 @@
   padding: 20px 0;
 }
 
-/* =================================
-   PROPERTY CARD
-================================= */
+/* PROPERTY CARD*/
 
 .property-card {
   background: #ffffff;
@@ -38,9 +34,7 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* =================================
-   PROPERTY IMAGE
-================================= */
+/* PROPERTY IMAGE*/
 
 .property-image-container {
   position: relative;
@@ -84,9 +78,7 @@
   font-weight: 600;
 }
 
-/* =================================
-   PROPERTY TYPE
-================================= */
+/* PROPERTY TYPE*/
 
 .property-type-badge {
   position: absolute;
@@ -107,17 +99,13 @@
   text-transform: capitalize;
 }
 
-/* =================================
-   PROPERTY CONTENT
-================================= */
+/* PROPERTY CONTENT*/
 
 .property-content {
   padding: 20px;
 }
 
-/* =================================
-   LOCATION
-================================= */
+/* LOCATION*/
 
 .property-location {
   margin: 0 0 8px;
@@ -127,9 +115,7 @@
   font-size: 14px;
 }
 
-/* =================================
-   TITLE
-================================= */
+/* TITLE*/
 
 .property-title {
   margin: 0 0 12px;
@@ -148,9 +134,7 @@
   overflow: hidden;
 }
 
-/* =================================
-   RENT
-================================= */
+/* RENT*/
 
 .property-rent {
   display: flex;
@@ -177,9 +161,7 @@
   font-size: 12px;
 }
 
-/* =================================
-   TENANT PREFERENCE
-================================= */
+/* TENANT PREFERENCE*/
 
 .tenant-preference {
   display: flex;
@@ -202,9 +184,7 @@
   text-transform: capitalize;
 }
 
-/* =================================
-   DESCRIPTION
-================================= */
+/* DESCRIPTION*/
 
 .property-description {
   margin: 0 0 8px;
@@ -216,9 +196,7 @@
   line-height: 1.6;
 }
 
-/* =================================
-   VIEW MORE
-================================= */
+/* VIEW MORE*/
 
 .view-more-link {
   display: inline-block;
@@ -241,9 +219,7 @@
   text-decoration: underline;
 }
 
-/* =================================
-   ACTION BUTTONS
-================================= */
+/* ACTION BUTTONS*/
 
 .property-actions {
   display: flex;
@@ -305,9 +281,7 @@
   transform: translateY(-1px);
 }
 
-/* =================================
-   TABLET
-================================= */
+/* TABLET*/
 
 @media (max-width: 1000px) {
   .property-list {
@@ -317,9 +291,7 @@
   }
 }
 
-/* =================================
-   MOBILE
-================================= */
+/* MOBILE*/
 
 @media (max-width: 650px) {
   .property-list {
@@ -333,9 +305,7 @@
   }
 }
 
-/* =================================
-   SMALL MOBILE
-================================= */
+/* SMALL MOBILE*/
 
 @media (max-width: 400px) {
   .property-content {

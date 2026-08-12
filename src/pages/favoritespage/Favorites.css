@@ -1,6 +1,4 @@
-/* =========================================
-   FAVORITES PAGE
-========================================= */
+/* FAVORITES PAGE*/
 
 .favorites-page {
   min-height: 100vh;
@@ -8,9 +6,7 @@
   background: #f5f3ff;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER*/
 
 .favorites-header {
   background: white;
@@ -54,9 +50,7 @@
   font-size: 15px;
 }
 
-/* =========================================
-   MAIN CONTAINER
-========================================= */
+/* MAIN CONTAINER*/
 
 .favorites-container {
   max-width: 1150px;
@@ -66,9 +60,7 @@
   padding: 30px 20px 50px;
 }
 
-/* =========================================
-   SECTION HEADER
-========================================= */
+/* SECTION HEADER*/
 
 .favorites-section-header {
   margin-bottom: 20px;
@@ -92,9 +84,7 @@
   font-size: 14px;
 }
 
-/* =========================================
-   FAVORITES GRID
-========================================= */
+/* FAVORITES GRID*/
 
 .favorites-grid {
   display: grid;
@@ -105,9 +95,7 @@
   gap: 22px;
 }
 
-/* =========================================
-   FAVORITE CARD
-========================================= */
+/* FAVORITE CARD*/
 
 .favorite-card {
   overflow: hidden;
@@ -133,9 +121,7 @@
     0 10px 25px rgba(0, 0, 0, 0.09);
 }
 
-/* =========================================
-   IMAGE
-========================================= */
+/* IMAGE*/
 
 .favorite-image-wrapper {
   position: relative;
@@ -165,9 +151,7 @@
   transform: scale(1.04);
 }
 
-/* =========================================
-   NO IMAGE
-========================================= */
+/* NO IMAGE*/
 
 .favorite-no-image {
   width: 100%;
@@ -197,9 +181,7 @@
   font-size: 14px;
 }
 
-/* =========================================
-   FAVORITE BADGE
-========================================= */
+/* FAVORITE BADGE*/
 
 .favorite-badge {
   position: absolute;
@@ -223,9 +205,7 @@
     0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
-/* =========================================
-   CARD CONTENT
-========================================= */
+/* CARD CONTENT*/
 
 .favorite-content {
   padding: 20px;
@@ -251,9 +231,7 @@
   overflow: hidden;
 }
 
-/* =========================================
-   PROPERTY INFO
-========================================= */
+/* PROPERTY INFO*/
 
 .favorite-info {
   display: flex;
@@ -285,9 +263,7 @@
   word-break: break-word;
 }
 
-/* =========================================
-   RENT
-========================================= */
+/* RENT*/
 
 .favorite-rent {
   display: flex;
@@ -317,9 +293,7 @@
   font-size: 13px;
 }
 
-/* =========================================
-   ACTIONS
-========================================= */
+/* ACTIONS*/
 
 .favorite-actions {
   display: flex;
@@ -329,9 +303,7 @@
   margin-top: 18px;
 }
 
-/* =========================================
-   VIEW BUTTON
-========================================= */
+/* VIEW BUTTON*/
 
 .favorite-view-button {
   flex: 1;
@@ -364,9 +336,7 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   REMOVE BUTTON
-========================================= */
+/* REMOVE BUTTON*/
 
 .favorite-remove-button {
   padding: 0 15px;
@@ -396,9 +366,7 @@
   border-color: #f87171;
 }
 
-/* =========================================
-   EMPTY STATE
-========================================= */
+/* EMPTY STATE*/
 
 .favorites-empty-card {
   max-width: 650px;
@@ -459,9 +427,7 @@
   line-height: 1.6;
 }
 
-/* =========================================
-   BROWSE BUTTON
-========================================= */
+/* BROWSE BUTTON*/
 
 .browse-favorites-button {
   display: inline-flex;
@@ -492,9 +458,7 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   LOADING
-========================================= */
+/* LOADING*/
 
 .favorites-status {
   min-height: 70vh;
@@ -536,9 +500,7 @@
   }
 }
 
-/* =========================================
-   ERROR
-========================================= */
+/* ERROR*/
 
 .favorites-error-card {
   width: 100%;
@@ -603,9 +565,7 @@
   background: #6b21a8;
 }
 
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET*/
 
 @media (max-width: 950px) {
   .favorites-grid {
@@ -614,9 +574,7 @@
   }
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE*/
 
 @media (max-width: 600px) {
   .favorites-header-inner {
