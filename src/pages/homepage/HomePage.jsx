@@ -89,7 +89,7 @@ const HomePage = () => {
           </div>
 
           <span className="property-count">
-            {count || 0} Properties
+            {properties?.length || 0} Properties
           </span>
         </div>
 
