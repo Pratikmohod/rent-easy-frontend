@@ -9,9 +9,7 @@ const MyProfile = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { singleUser, loading, success } = useSelector(
-    (state) => state.user
-  );
+  const { singleUser, loading, success } = useSelector((state) => state.user);
 
   useEffect(() => {
     const token = localStorage.getItem("access");
@@ -30,7 +28,7 @@ const MyProfile = () => {
 
   const handleDelete = () => {
     const confirmDelete = window.confirm(
-      "Are you sure you want to delete the account?"
+      "Are you sure you want to delete the account?",
     );
 
     if (confirmDelete) {
@@ -45,7 +43,6 @@ const MyProfile = () => {
   return (
     <div className="profile-page">
       <div className="profile-container">
-
         {/* PROFILE HEADER */}
         <div className="profile-header">
           <div className="profile-avatar">
@@ -54,9 +51,7 @@ const MyProfile = () => {
 
           <div className="profile-header-info">
             <h1>{singleUser?.username}</h1>
-            <span className="profile-role">
-              {singleUser?.role}
-            </span>
+            <span className="profile-role">{singleUser?.role}</span>
           </div>
         </div>
 
@@ -65,7 +60,6 @@ const MyProfile = () => {
           <h2>Personal Information</h2>
 
           <div className="profile-grid">
-
             {/* Email */}
             <div className="profile-field">
               <label>Email</label>
@@ -87,9 +81,7 @@ const MyProfile = () => {
             {/* Permanent Address */}
             <div className="profile-field profile-full">
               <label>Permanent Address</label>
-              <p>
-                {singleUser?.permanent_address || "Not provided"}
-              </p>
+              <p>{singleUser?.permanent_address || "Not provided"}</p>
             </div>
 
             {/* City */}
@@ -109,12 +101,10 @@ const MyProfile = () => {
               <label>Country</label>
               <p>{singleUser?.country || "Not provided"}</p>
             </div>
-
           </div>
 
           {/* ACTION BUTTONS */}
           <div className="profile-actions">
-
             <button
               onClick={() => navigate("/editProfile")}
               className="update-profile-btn"
@@ -122,13 +112,9 @@ const MyProfile = () => {
               Update Profile
             </button>
 
-            <button
-              onClick={handleDelete}
-              className="delete-profile-btn"
-            >
+            <button onClick={handleDelete} className="delete-profile-btn">
               Delete Profile
             </button>
-
           </div>
         </div>
       </div>

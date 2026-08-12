@@ -1,26 +1,30 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./PropertyList.css";
 
 const PropertyList = ({ properties }) => {
   const navigate = useNavigate();
 
+  const { singleUser } = useSelector((state) => state.user);
+
   const getImageUrl = (image) => {
     if (!image) return null;
-    
+
     if (typeof image === "string") {
       return image;
     }
     return image.url || null;
-  }
+  };
 
   return (
     <div className="property-list">
       {properties?.map((value) => {
-        const primary_image = value.images?.find((image) => image.is_primary === true) ||
-        value.images?.[0];
+        const primary_image =
+          value.images?.find((image) => image.is_primary === true) ||
+          value.images?.[0];
 
-        const imageUrl = getImageUrl(primary_image?.image)
+        const imageUrl = getImageUrl(primary_image?.image);
         return (
           <div className="property-card" key={value.id}>
             {/* Property Image */}
@@ -46,7 +50,7 @@ const PropertyList = ({ properties }) => {
                 <i
                   className="fa-solid fa-map-pin"
                   style={{ color: "rgb(255, 2, 2)" }}
-                ></i>{" "}
+                ></i>
                 {value.city}, {value.state}
               </p>
 
@@ -87,13 +91,18 @@ const PropertyList = ({ properties }) => {
                   View Details
                 </Link>
 
-                {/* Book Property */}
-                <button
-                  onClick={() => navigate(`/properties/${value.id}/book`)}
-                  className="book-property-btn"
-                >
-                  Book Visit
-                </button>
+                {/* Only Tenant can book property */}
+
+                {singleUser?.role === "tenant" && (
+                  <button
+                    onClick={() => 
+                      navigate(`/properties/${value.id}/book`)
+                    }
+                    className="book-property-btn"
+                  >
+                    Book Visit
+                  </button>
+                )}
               </div>
             </div>
           </div>
